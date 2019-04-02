@@ -13,10 +13,11 @@ def starter_menu(size):
     while not done:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                screen.fill((255, 255, 255, 255))
+                screen.fill(settings.WHITE)
                 done = True
                 return False
-            if event.type == pygame.MOUSEBUTTONDOWN and (pygame.mouse.get_pos()[0] in range(85, 407) and pygame.mouse.get_pos()[1] in range(272, 431)):
+            if event.type == pygame.MOUSEBUTTONDOWN and (pygame.mouse.get_pos()[0] in settings.LEFT_RIGHT_PLAYBUTTON
+                                                         and pygame.mouse.get_pos()[1] in settings.UP_DOWN_PLAYBUTTON):
                 done = True
                 return True
         pygame.display.flip()
@@ -33,10 +34,11 @@ def game_over_menu(size):
     while not done:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                screen.fill((255, 255, 255, 255))
+                screen.fill(settings.WHITE)
                 done = True
                 return False
-            if event.type == pygame.MOUSEBUTTONDOWN and (pygame.mouse.get_pos()[0] in range(76, 421) and pygame.mouse.get_pos()[1] in range(287, 484)):
+            if event.type == pygame.MOUSEBUTTONDOWN and (pygame.mouse.get_pos()[0] in settings.LEFT_RIGHT_QUITBUTTON
+                                                         and pygame.mouse.get_pos()[1] in settings.UP_DOWN_QUITBUTTON):
                 done = True
                 return True
         pygame.display.flip()
