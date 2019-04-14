@@ -1,6 +1,6 @@
 import pygame
 import random
-import my_settings as settings
+import tetris.settings as settings
 
 
 class Field:
