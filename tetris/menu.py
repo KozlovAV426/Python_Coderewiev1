@@ -1,12 +1,11 @@
 import pygame
 import random
-import my_settings as settings
-
+import tetris.settings as settings
 
 def starter_menu(size):
     pygame.init()
     screen = pygame.display.set_mode(size)
-    img = pygame.image.load('menu.png')
+    img = pygame.image.load('tetris/img/menu.png')
     screen.blit(img, (0, 0))
     pygame.display.set_caption("Tetris")
     done = False
@@ -27,7 +26,7 @@ def starter_menu(size):
 def game_over_menu(size):
     pygame.init()
     screen = pygame.display.set_mode(size)
-    img = pygame.image.load('game_over.png')
+    img = pygame.image.load('tetris/img/game_over.png')
     screen.blit(img, (0, 0))
     pygame.display.set_caption("Tetris")
     done = False

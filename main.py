@@ -1,6 +1,6 @@
-import game
-import menu
-import my_settings as settings
+import tetris.game as game
+import tetris.menu as menu
+import tetris.settings as settings
 
 done = False
 while not done:
